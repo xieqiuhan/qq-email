@@ -1,0 +1,275 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow: scroll;
+}
+
+.bar{
+height:70px;
+    width:100%;
+    background-color:aliceblue;
+}
+.bar img {
+    height: 60px;
+    width: 280px;
+    margin-top: 0;
+    margin-left: 20px;
+}
+.nav {
+    list-style: none;
+    margin-left:77%;
+    margin-top:-3%;
+
+}
+.nav li{
+    padding-bottom: 0;
+    padding-top: 0;
+    padding-right: 6px;
+
+    font-size: 0.9rem;
+    display:inline-block;
+    border-right:2px solid #ccc;
+}
+.nav li a:hover{
+    text-decoration: underline;
+}
+.nav :last-child{
+    border-right: none;
+}
+ a{
+    color:darkblue;
+    text-decoration: none;
+     cursor: pointer;
+}
+
+
+body{
+    background: url(image/background.jpg) no-repeat;
+    background-size: 550px 380px;
+    background-position: 200px 160px;
+}
+.two {
+    display: block;
+}
+
+.all{
+    border:1px solid lightblue;
+    width: 335px;
+    height: 387px;
+    position: absolute;
+    top: 136px;
+    right: 200px;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+.all a:hover{
+    text-decoration: underline;
+}
+.all .first{
+    background-color: aliceblue;
+}
+
+.all .first #login,.all .first #pas{
+    width:167px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+    float: left;
+    font-family: "微软雅黑";
+    color: gray;
+    cursor: pointer;
+
+}
+.all .first .active{
+    color:black;
+}
+.all .second .number{
+    width: 284px;
+    height: 35px;
+    margin-top: 18px;
+    margin-left: 17px;
+}
+
+.all .second .password{
+    width: 284px;
+    height: 35px;
+    margin-top: 15px;
+    margin-left: 17px;
+}
+.all .second .jinggao{
+    display: block;
+    color:red;
+    font-size: 13px;
+    margin-left: 17px;
+    margin-top:20px;
+}
+.all .second .clear{
+    display: block;
+    background: url(image/clear.png) no-repeat center;
+    background-size: 15px 15px;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    margin-top: -30px;
+    margin-left: 280px;
+    opacity: 0.5;
+    cursor: pointer;
+    display: none;
+}
+
+.all .second .ok{
+    width: 284px;
+    height: 40px;
+    margin-top: 17px;
+    margin-left: 17px;
+    border: 0;
+    background-color: cornflowerblue;
+    font-size:larger;
+    color: white;
+    font-family: "微软雅黑";
+    cursor: pointer;
+}
+.all .second .ok:hover{
+    background-color: dodgerblue;
+}
+
+.all .first{
+    width: 335px;
+    height:52px;
+}
+
+.all .second{
+    width: 332px;
+    height:290px;
+}
+
+.all .third{
+    position: relative;
+    width: 222px;
+    height:45px;
+    bottom: 25px;
+    line-height: 45px;
+    padding-left: 110px;
+}
+
+.all .first #login:hover{
+    color:black;
+}
+
+.all .first #pas:hover{
+    color:black;
+}
+
+.all .second .bnext{
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 17px;
+}
+
+.all .second .tnext{
+    display: block;
+    width: 100px;
+    height: 15px;
+    margin-left: 45px;
+    margin-top: -22px;
+    font-size: small;
+
+}
+
+.all .third a{
+    font-size:smaller;
+    font-family: "微软雅黑";
+    padding-right: 6px;
+    border-right: 2px solid #cccccc;
+}
+
+.all .third :last-child{
+    border-right: none;
+}
+.one{
+    display:none;
+}
+.one-1 span{
+    display: block;
+    margin-top:28px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+.erweima{
+    height:140px;width:140px;
+    margin-top:15px;
+    margin-left: 30%;
+    border: 1px solid #999999;
+
+}
+.one .one-1 .q-phone{
+    height:35px;
+
+    border-radius: 0.8rem;
+    margin-left: 30%;
+    margin-top: 10px;
+    border:0;
+    background-color: #cccccc;
+    cursor: pointer;
+    outline: none;
+}
+
+.one-2{
+    margin-top:15%;
+    margin-left:5%;
+    font-size: 13px;
+}
+.one-2 .o-next{
+    width:20px;
+    height:20px;
+    margin-top: 0;
+    margin-left: 17px;
+}
+.one-2 .o-nav{
+    margin-top:-20px;
+    margin-left:50%;
+}
+.o-nav a{
+    padding-right:6px;
+    border-right: #cccccc 2px solid;
+}
+.o-nav :last-child{
+    border-right: none;
+}
+.one .one-1 .q-phone :hover{
+     background-color: darkblue;
+ }
+.foot{
+    margin-top: 41%;
+    height:40px;
+    width:100%;
+    background-color:aliceblue;
+    text-align: center;
+
+}
+.foot-nav{
+    list-style: none;
+}
+.foot-nav span{
+    color:#999;
+}
+.foot-nav li{
+    margin-top:10px;
+    padding-bottom: 0;
+
+    padding-right: 6px;
+    font-size: 0.9rem;
+    display:inline-block;
+    border-right:2px solid #ccc;
+
+}
+.foot-nav li a:hover{
+    text-decoration: underline;
+}
+.foot-nav :last-child{
+    border-right: none;
+}

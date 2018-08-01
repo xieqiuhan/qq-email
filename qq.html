@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录QQ邮箱</title>
+    <link type="text/css" rel="stylesheet" href="qq.css"/>
+    <script src="jquery.js"></script>
+    <script src="qq.js"></script>
+    <script src="cookie.js"></script>
+<script>
+    function savecontent()
+    {
+        var kk="";
+        var content=document.getElementsByClassName("number")[0].value;
+        if(content.length>1)
+        {
+            setCookie("ct",content,14);
+            //document.cookie="ct="+content;
+            if((kk=getCookie("ct")).length>0)
+            {
+                document.getElementsByClassName("number")[0].value=kk;
+
+            }
+        }
+        else if(content.length<1&&((kk=getCookie('ct')).length>0))
+        { document.getElementsByClassName("number")[0].value=kk;
+          document.getElementById('c-first').style.display='block';
+        }
+
+    }
+</script>
+</head>
+<body onload="savecontent()">
+<div class="bar">
+    <img src="image/logo.jpg" class="top" />
+    <ul class="nav">
+        <li><a href="https://ui.ptlogin2.qq.com/cgi-bin/login?style=9&appid=522005705&daid=4&s_url=https%3A%2F%2Fw.mail.qq.com%2Fcgi-bin%2Flogin%3Fvt%3Dpassport%26vm%3Dwsk%26delegate_url%3D%26f%3Dxhtml%26target%3D&hln_css=http%3A%2F%2Fmail.qq.com%2Fzh_CN%2Fhtmledition%2Fimages%2Flogo%2Fqqmail%2Fqqmail_logo_default_200h.png&low_login=1&hln_autologin=记住登录状态&pt_no_onekey=1">基本版</a></li>
+        <li><a href="https://en.mail.qq.com/cgi-bin/loginpage">English</a></li>
+        <li><a href="http://app.mail.qq.com/">手机版</a></li>
+        <li><a href="https://exmail.qq.com/?referrer=index_top">企业邮箱</a> </li>
+    </ul>
+</div>
+
+<div class="all">
+    <div class="first">
+        <span id="login">快速登录</span>
+        <span id="pas" class="active" >账号密码登录</span>
+    </div>
+    <div class="two">
+
+    <div class="second">
+        <span class="jinggao"></span>
+        <input type="text" placeholder="支持QQ号/邮箱/手机号码登录"  name="user"
+               class="number" onblur="savecontent()"/>
+        <span class="clear" id="c-first"></span>
+        <br />
+        <input type="text"  placeholder="QQ密码" name="pass"  class="password"/>
+        <span class="clear"></span>
+        <input type="checkbox" class="bnext"/><span class="tnext">下次自动登录</span>
+        <input type="button" value="登录"  class="ok"/>
+    </div>
+    <div class="third">
+        <a href="https://aq.qq.com/v2/uv_aq/html/reset_pwd/pc_reset_pwd_input_account.html?v=3.0&old_ver_account=">忘了密码？</a>
+        <a href="https://ssl.zc.qq.com/v3/index-chs.html">注册新账户</a>
+        <a href="http://support.qq.com/discuss/350_1.shtml">意见反馈</a>
+    </div>
+    </div>
+    <div class="one">
+        <div class="one-1">
+             <span>安全登录，防止被盗</span>
+            <img class="erweima" src="image/erweima.png"/>
+            <button class="q-phone" >使用QQ手机版扫描登录</button>
+
+        </div>
+        <div class="one-2">
+            <input type="checkbox" class="o-next"/><span class="t-next">下次自动登录</span>
+            <div class="o-nav"> <a href="https://ssl.zc.qq.com/v3/index-chs.html">注册新账户</a>
+                <a href="http://support.qq.com/discuss/350_1.shtml">意见反馈</a></div>
+
+        </div>
+    </div>
+
+</div>
+<div class="foot">
+    <ul class="foot-nav">
+        <li ><a href="https://www.tencent.com/zh-cn/index.html">关于腾讯</a></li>
+        <li ><a href="http://mail.qq.com/cgi-bin/readtemplate?check=false&t=mail_clause">服务条款</a></li>
+        <li ><a href="https://privacy.qq.com">隐私政策</a></li>
+        <li ><a href="http://kf.qq.com/product/email.html">客服中心</a></li>
+        <li><a href="http://mail.qq.com/contact_us.html">联系我们</a></li>
+        <li><a href="http://service.mail.qq.com">帮助中心</a></li>
+        <li><span>&copy;1998 - 2018 Tencent Inc. All Rights Reserved</span></li>
+    </ul>
+
+</div>
+<script>
+    var allLinks=document.getElementsByTagName("a");
+    for(var i=0;i!=allLinks.length; i++){
+        allLinks[i].target="_blank";
+    }
+</script>
+</body>
+</html>
