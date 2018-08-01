@@ -240,9 +240,6 @@ body{
 .o-nav :last-child{
     border-right: none;
 }
-.one .one-1 .q-phone :hover{
-     background-color: darkblue;
- }
 .foot{
     margin-top: 41%;
     height:40px;
