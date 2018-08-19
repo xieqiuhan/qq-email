@@ -6,7 +6,7 @@ body {
 }
 
 .bar{
-height:70px;
+    height:70px;
     width:100%;
     background-color:aliceblue;
 }
@@ -19,17 +19,16 @@ height:70px;
 .nav {
     list-style: none;
     margin-left:77%;
-    margin-top:-3%;
+    margin-top:-40px;
+    white-space: nowrap;
 
 }
 .nav li{
-    padding-bottom: 0;
-    padding-top: 0;
-    padding-right: 6px;
-
+    margin:0;
+    padding:0 6px 0 0;
     font-size: 0.9rem;
     display:inline-block;
-    border-right:2px solid #ccc;
+    border-right:1px solid #ccc;
 }
 .nav li a:hover{
     text-decoration: underline;
@@ -59,7 +58,7 @@ body{
     height: 387px;
     position: absolute;
     top: 136px;
-    right: 200px;
+    left:900px;
     border-radius: .5rem;
     overflow: hidden;
 }
@@ -68,6 +67,7 @@ body{
 }
 .all .first{
     background-color: aliceblue;
+    border-bottom: 1px solid #ccc;
 }
 
 .all .first #login,.all .first #pas{
@@ -241,7 +241,7 @@ body{
     border-right: none;
 }
 .foot{
-    margin-top: 41%;
+    margin-top: 580px;
     height:40px;
     width:100%;
     background-color:aliceblue;
@@ -269,4 +269,24 @@ body{
 }
 .foot-nav :last-child{
     border-right: none;
+}
+@media only screen and (max-width:1224px){
+    .nav {
+        margin-left:70%;
+    }
+    .nav li{
+        padding-bottom: 0;
+        padding-top: 0;
+        padding-right: 4px;
+        font-size: 0.9rem;
+        display:inline-block;
+        border-right:2px solid #ccc;
+    }
+    .all{
+        left:700px;
+    }
+    body{
+        background-size: 500px 360px;
+        background-position: 100px 120px;
+    }
 }

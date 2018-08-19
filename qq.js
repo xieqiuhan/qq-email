@@ -1,10 +1,29 @@
 $(function(){
 
     //框内输入就会显示clear
-    $('input').keyup(function(){
+   $('input').keyup(function(){
         if($(this).val()){
             $(this).next('.clear').css('display','block');
         }
+    });
+   //输入框获取焦点，并且判断输入框内容是否符合要求
+    $('input[type=text]').focusin(function(){
+        $(this).css('border','1px solid #3F89EC');
+    }).focusout(function(){
+        $(this).css('border','1px solid #ccc');
+         value=$('.number').val();
+
+        if (/[\u4E00-\u9FA5]/g.test(value)){
+            $('.number').prev('.jinggao').html('请输入正确的用户名!');
+        }else if(/[A-Za-z]+/g.test(value)){
+            value +='@qq.com';
+            $('.number').val(value);
+        }
+
+        else {
+            $('.number').prev('.jinggao').hide();
+        }
+
     });
 
     //给clear添加事件
@@ -77,5 +96,4 @@ $('.ok').click(function(){
         }
         }
 })
-
 })
